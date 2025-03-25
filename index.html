@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Search</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; text-align: center; background-color: white; color: black; }
+        #header { padding: 10px; background: #f4f4f4; color: black; }
+        #searchBox { width: 80%; max-width: 400px; padding: 10px; margin: 20px auto; border: 1px solid #ccc; border-radius: 5px; font-size: 16px; }
+        #results { margin-top: 20px; padding: 10px; text-align: left; max-width: 800px; margin: auto; }
+        .site-section { margin-top: 20px; padding: 10px; border: 1px solid #ccc; border-radius: 5px; background: #f9f9f9; }
+        .error { color: red; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h1>Movie Search</h1>
+        <input type="text" id="searchBox" placeholder="Search for a movie..." onkeyup="searchMovies()">
+    </div>
+    <div id="results"></div>
+    <script src="script.js"></script>
+</body>
+</html>
